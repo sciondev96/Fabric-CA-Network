@@ -1,0 +1,15 @@
+To run the project, execute ./start.sh after giving the file necessary permissions.
+
+The files configorg1.yaml, configorg2.yaml and configorg3.yaml are to be placed under org<1,2,3>/msp/ directory.
+
+This will automatically be done by start.sh and renaming the files to config.yaml.
+
+The sacc folder contains the chaincode that is being installed on the peers and will be copied by start.sh script
+to org1/peers/peer1/assets/chaincode.
+
+The script start.sh then calls genesis.sh within the cmd directory to create the necessary genesis block and 
+channel configurations. It will then join all the peers to the channel and install the sacc.go chaincode on all 
+the peers in the channel.
+
+Then the chaincode will be instantiated and quried. The sample output expected on completion of running the script is "10".
+
