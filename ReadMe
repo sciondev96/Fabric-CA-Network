@@ -11,5 +11,5 @@ The script start.sh then calls genesis.sh within the cmd directory to create the
 channel configurations. It will then join all the peers to the channel and install the sacc.go chaincode on all 
 the peers in the channel.
 
-Then the chaincode will be instantiated and quried. The sample output expected on completion of running the script is "10".
+Then the chaincode will be instantiated and queried. The sample output expected on completion of running the script is "10".
 
