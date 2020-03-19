@@ -1,3 +1,6 @@
+To install fabric-ca-client:
+go get -u github.com/hyperledger/fabric-ca-/cmd/...
+
 To run the project, execute ./start.sh after giving the file necessary permissions.
 
 The files configorg1.yaml, configorg2.yaml and configorg3.yaml are to be placed under org<1,2,3>/msp/ directory.
@@ -12,4 +15,9 @@ channel configurations. It will then join all the peers to the channel and insta
 the peers in the channel.
 
 Then the chaincode will be instantiated and queried. The sample output expected on completion of running the script is "10".
+
+References:
+https://hyperledger-fabric-ca.readthedocs.io/en/latest/operations_guide.html
+https://medium.com/@sjnjaiswal/hlf-part1-hyperledger-fabric-network-setup-using-fabric-ca-554d49aacb49
+
 
